@@ -1,0 +1,31 @@
+﻿<Window x:Class="M3_Project.TrainTracking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M3_Project"
+        mc:Ignorable="d"
+        Title="trainTracking" Height="850" Width="390">
+    <Grid Background="#A4E7CF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="menuButton" Content="Menu" Width="150" Height="40" Margin="0,10,0,0" FontSize="20" Background="#2678F3" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Cursor="Hand" Click="menuButton_Click" FontFamily="{StaticResource Nunito}"/>
+
+        <Image Source="Static/logo.png" Height="80" Width="80" Margin="20,20,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Top" Margin="0,91,0,0">
+
+            <TextBlock Text="Track your train" FontSize="36" Margin="0,0,0,30" HorizontalAlignment="Center" FontFamily="{DynamicResource Nunito}" FontWeight="ExtraBold"/>
+
+            <TextBlock Text="Train ID:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left" FontFamily="{StaticResource Nunito}"/>
+            <TextBox x:Name="trainIDTextBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center" FontFamily="{StaticResource Nunito}"/>
+
+            <Button x:Name="searchButton" Content="Search" Width="150" Height="40" Margin="0,0,0,30" FontSize="20" Background="#2678F3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" Click="searchButton_Click" FontFamily="{StaticResource Nunito}"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

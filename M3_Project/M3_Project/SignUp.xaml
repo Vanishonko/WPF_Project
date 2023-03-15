@@ -1,0 +1,47 @@
+﻿<Window x:Class="M3_Project.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Login" Height="850" Width="390">
+
+    <Grid Background="#A4E7CF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
+
+            <TextBlock Text="Sign up" FontSize="40" Margin="0,0,0,30" HorizontalAlignment="Center" FontWeight="Heavy"/>
+
+            <TextBlock Text="Your first name:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <TextBox x:Name="firstNameTextBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Your last name:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <TextBox x:Name="lastNameTextBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Your email:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <TextBox x:Name="emailTextBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Your username:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <TextBox x:Name="usernameTextBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Your password:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <PasswordBox x:Name="passwordBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Confirm password:" Width="310" FontSize="20" Margin="20,0,0,5" HorizontalAlignment="Center" TextAlignment="Left"/>
+            <PasswordBox x:Name="confirmPasswordBox" Width="310" Height="30" Margin="20,0,0,15" FontSize="18" HorizontalAlignment="Center"/>
+
+            <Button x:Name="SignUpButton" Content="Sign up" Width="150" Height="40" Margin="0,0,0,30" FontSize="20" Background="#2678F3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" Click="SignUpButton_Click"/>
+
+
+            <TextBlock Text="Already have an account?" FontSize="16" HorizontalAlignment="Center"/>
+            <TextBlock Text="Log in!" FontSize="16" FontWeight="Bold" TextDecorations="Underline" Foreground="#FF007ACC" HorizontalAlignment="Center" Cursor="Hand" MouseLeftButtonUp="LoginPage"/>
+
+        </StackPanel>
+    </Grid>
+
+</Window>
